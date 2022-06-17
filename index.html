@@ -58,6 +58,7 @@
       </style>
 </head>
 <body style="background-color: #212f3d">
+      
       <div class="promo">Happy birthday my Sweet heart</div>
       <div class="center-me" id="demo" style="background-image: url('./balloon-heart.svg')">
             <div class="center" id="demo1" style="background-image: url('./activity.svg');">
@@ -67,7 +68,13 @@
                   <div class="button" style="text-align: center;padding: 20px;"><button style="padding:5px 0px;" id="prev" onclick="getPrevious()"><- Previous </button><button id="reset" onclick="reset()"><img src="./kh.svg" alt="reset" style="height: 20px;width: 30px;"></button><button id="newQ" style="padding: 5px 0px;">More love -></button></div>
             </div>
       </div>
-      
+      <script>
+            var pass = prompt("Enter password:-");
+            if(pass != '2362192004')
+            {
+                  document.getElementById('demo').innerHTML = `<b style="background-color:white;padding:50px;text-align:center;">Entered wrong password!</b>`;
+            }
+      </script>
       <script>
             if(window.outerWidth<=700)
             {
